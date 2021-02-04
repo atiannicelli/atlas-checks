@@ -298,7 +298,7 @@ class CloudAtlasChecksControl:
             + " -countries='{}'".format(self.countries)
             + " -checks='{}'".format(self.checks)
             + " -includeFixSuggestions=true"
-            + " > {} 2>&1".format(self.atlasCheckLog)
+            + " > {}".format(self.atlasCheckLog)
         )
 
         logger.info("Starting mr upload: {}".format(cmd))
@@ -436,7 +436,7 @@ class CloudAtlasChecksControl:
             return ssh_stdout.channel.recv_exit_status()
 
         # if key was not specified then try to use ssm
-        logger.debug("Issuing remote command: {} ... ".format(cmd))
+        logger.info("Issuing remote command: {} ... ".format(cmd))
         while True:
             try:
                 response = self.ssmClient.send_command(
@@ -451,11 +451,12 @@ class CloudAtlasChecksControl:
 
         time.sleep(1)
         command_id = response['Command']['CommandId']
-        for _timeout in range(self.timeoutMinutes * 60):
+        for _timeout in range(self.timeoutMinutes * 6):
             feedback = self.ssmClient.get_command_invocation(CommandId=command_id, InstanceId=self.instanceId)
             if feedback['StatusDetails'] != 'InProgress':
                 break
-            time.sleep(1)
+            logger.error("Waiting: " + feedback['StatusDetails'])
+            time.sleep(10)
         if feedback['StatusDetails'] != 'Success':
             if not quiet:
                 logger.error("feedback: " + feedback['StatusDetails'])
@@ -488,17 +489,6 @@ class CloudAtlasChecksControl:
                     "grep 'Success!' {}/_*".format(self.atlasOutDir), quiet=True
                 ):
                     logger.error("Atlas Check spark job Failed.")
-                    logger.error(
-                        "---tail of Atlas Checks Spark job log output ({})--- \n".format(
-                            self.atlasCheckLogName
-                            + " ".join(
-                                map(
-                                    str,
-                                    open(self.atlasCheckLogName, "r").readlines()[-50:],
-                                )
-                            )
-                        )
-                    )
                     finish(status=-1)
                 return 0
             time.sleep(60)

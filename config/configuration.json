@@ -187,24 +187,31 @@
       "difficulty": "NORMAL",
       "defaultPriority": "LOW",
       "highPriorityRule": {
-        "condition": "OR",
-        "rules": [
-          "highway=motorway",
-          "highway=motorway_link",
-          "highway=trunk",
-          "highway=trunk_link"
-        ]
-      },
-      "mediumPriorityRule": {
-        "condition": "OR",
-        "rules": [
-          "highway=primary",
-          "highway=primary_link",
-          "highway=secondary",
-          "highway=secondary_link"
-        ]
-      },
-      "tags": "highway"
+        "condition":"OR",
+        "rules":[
+            {"type": "bounds", "operator": "contains", "value": "bbox.-98.805051,29.2562939,-98.023766,29.777227"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-98.01332,29.942058,-97.521823,30.742355"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-97.648282,32.322777,-96.313105,33.2448879"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-95.872908,29.3667169,-94.802492,30.2584199"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-88.655707,41.326194,-86.978681,42.4935458"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-85.05069,33.1720879,-83.680793,34.3859799"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-83.797195,41.979053,-82.515768,42.890952"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-81.5228,28.15907,-81.163088,28.421315"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-81.90941,28.2761849,-81.092815,28.8409589"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-80.528196,25.4037869,-80.031362,26.999043"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-77.821925,38.402606,-76.67486,39.417607"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-76.123615,39.4926229,-74.657158,40.436757"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-74.948673,39.5083757,-72.269961,41.5412229"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-71.821553,41.774877,-70.591469,43.0633909"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-122.64969,37.341,-121.88927,38.138779"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-122.74212,47.007936,-121.87232,48.035194"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-122.19132,37.121665,-121.70998,37.4691679"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-118.87157,33.5642161,-117.48644,34.337914"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-117.45648,32.539866,-116.69485,33.41444"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-112.46033,33.089419,-111.42554,33.885028"}
+          ]
+        },
+        "tags": "highway"
     }
   },
   "ConstructionCheck": {
@@ -439,7 +446,32 @@
       "description": "Tasks containing improperly formed multipolygon relations.",
       "blurb": "Invalid Multipolygon Relations",
       "instruction": "Open your favorite editor and fix the issues listed in the instructions for each multipolygon relation.",
-      "difficulty": "HARD"
+      "difficulty": "HARD",
+      "highPriorityRule": {
+        "condition":"OR",
+        "rules":[
+            {"type": "bounds", "operator": "contains", "value": "bbox.-98.805051,29.2562939,-98.023766,29.777227"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-98.01332,29.942058,-97.521823,30.742355"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-97.648282,32.322777,-96.313105,33.2448879"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-95.872908,29.3667169,-94.802492,30.2584199"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-88.655707,41.326194,-86.978681,42.4935458"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-85.05069,33.1720879,-83.680793,34.3859799"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-83.797195,41.979053,-82.515768,42.890952"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-81.5228,28.15907,-81.163088,28.421315"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-81.90941,28.2761849,-81.092815,28.8409589"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-80.528196,25.4037869,-80.031362,26.999043"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-77.821925,38.402606,-76.67486,39.417607"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-76.123615,39.4926229,-74.657158,40.436757"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-74.948673,39.5083757,-72.269961,41.5412229"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-71.821553,41.774877,-70.591469,43.0633909"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-122.64969,37.341,-121.88927,38.138779"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-122.74212,47.007936,-121.87232,48.035194"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-122.19132,37.121665,-121.70998,37.4691679"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-118.87157,33.5642161,-117.48644,34.337914"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-117.45648,32.539866,-116.69485,33.41444"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-112.46033,33.089419,-111.42554,33.885028"}
+        ]
+      }
     }
   },
   "InvalidSignBoardRelationCheck": {
@@ -513,6 +545,31 @@
       "blurb": "Invalid Turn Restrictions",
       "instruction": "Correct the displayed invalid turn restriction",
       "difficulty": "HARD",
+      "highPriorityRule": {
+        "condition":"OR",
+        "rules":[
+            {"type": "bounds", "operator": "contains", "value": "bbox.-98.805051,29.2562939,-98.023766,29.777227"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-98.01332,29.942058,-97.521823,30.742355"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-97.648282,32.322777,-96.313105,33.2448879"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-95.872908,29.3667169,-94.802492,30.2584199"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-88.655707,41.326194,-86.978681,42.4935458"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-85.05069,33.1720879,-83.680793,34.3859799"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-83.797195,41.979053,-82.515768,42.890952"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-81.5228,28.15907,-81.163088,28.421315"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-81.90941,28.2761849,-81.092815,28.8409589"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-80.528196,25.4037869,-80.031362,26.999043"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-77.821925,38.402606,-76.67486,39.417607"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-76.123615,39.4926229,-74.657158,40.436757"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-74.948673,39.5083757,-72.269961,41.5412229"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-71.821553,41.774877,-70.591469,43.0633909"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-122.64969,37.341,-121.88927,38.138779"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-122.74212,47.007936,-121.87232,48.035194"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-122.19132,37.121665,-121.70998,37.4691679"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-118.87157,33.5642161,-117.48644,34.337914"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-117.45648,32.539866,-116.69485,33.41444"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-112.46033,33.089419,-111.42554,33.885028"}
+        ]
+      },
       "tags":"highway"
     }
   },
@@ -524,7 +581,32 @@
       "blurb": "Fix level crossing railway/highway intersections",
       "instruction": "Open your favorite editor and fix the railway/highway intersection nodes.",
       "difficulty": "NORMAL",
-      "defaultPriority": "LOW"
+      "defaultPriority": "LOW",
+      "highPriorityRule": {
+        "condition":"OR",
+        "rules":[
+            {"type": "bounds", "operator": "contains", "value": "bbox.-98.805051,29.2562939,-98.023766,29.777227"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-98.01332,29.942058,-97.521823,30.742355"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-97.648282,32.322777,-96.313105,33.2448879"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-95.872908,29.3667169,-94.802492,30.2584199"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-88.655707,41.326194,-86.978681,42.4935458"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-85.05069,33.1720879,-83.680793,34.3859799"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-83.797195,41.979053,-82.515768,42.890952"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-81.5228,28.15907,-81.163088,28.421315"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-81.90941,28.2761849,-81.092815,28.8409589"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-80.528196,25.4037869,-80.031362,26.999043"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-77.821925,38.402606,-76.67486,39.417607"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-76.123615,39.4926229,-74.657158,40.436757"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-74.948673,39.5083757,-72.269961,41.5412229"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-71.821553,41.774877,-70.591469,43.0633909"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-122.64969,37.341,-121.88927,38.138779"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-122.74212,47.007936,-121.87232,48.035194"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-122.19132,37.121665,-121.70998,37.4691679"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-118.87157,33.5642161,-117.48644,34.337914"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-117.45648,32.539866,-116.69485,33.41444"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-112.46033,33.089419,-111.42554,33.885028"}
+        ]
+      }
     }
   },
   "LineCrossingBuildingCheck": {
@@ -535,21 +617,28 @@
       "difficulty": "NORMAL",
       "defaultPriority": "LOW",
       "highPriorityRule": {
-        "condition": "OR",
-        "rules": [
-          "highway=motorway",
-          "highway=motorway_link",
-          "highway=trunk",
-          "highway=trunk_link"
-        ]
-      },
-      "mediumPriorityRule": {
-        "condition": "OR",
-        "rules": [
-          "highway=primary",
-          "highway=primary_link",
-          "highway=secondary",
-          "highway=secondary_link"
+        "condition":"OR",
+        "rules":[
+            {"type": "bounds", "operator": "contains", "value": "bbox.-98.805051,29.2562939,-98.023766,29.777227"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-98.01332,29.942058,-97.521823,30.742355"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-97.648282,32.322777,-96.313105,33.2448879"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-95.872908,29.3667169,-94.802492,30.2584199"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-88.655707,41.326194,-86.978681,42.4935458"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-85.05069,33.1720879,-83.680793,34.3859799"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-83.797195,41.979053,-82.515768,42.890952"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-81.5228,28.15907,-81.163088,28.421315"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-81.90941,28.2761849,-81.092815,28.8409589"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-80.528196,25.4037869,-80.031362,26.999043"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-77.821925,38.402606,-76.67486,39.417607"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-76.123615,39.4926229,-74.657158,40.436757"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-74.948673,39.5083757,-72.269961,41.5412229"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-71.821553,41.774877,-70.591469,43.0633909"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-122.64969,37.341,-121.88927,38.138779"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-122.74212,47.007936,-121.87232,48.035194"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-122.19132,37.121665,-121.70998,37.4691679"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-118.87157,33.5642161,-117.48644,34.337914"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-117.45648,32.539866,-116.69485,33.41444"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-112.46033,33.089419,-111.42554,33.885028"}
         ]
       },
       "tags": "building"
@@ -568,6 +657,31 @@
       "instruction": "Edit the features overlapping the waterbody so they either validly overlap or do not overlap.",
       "difficulty": "EASY",
       "defaultPriority": "MEDIUM",
+      "highPriorityRule": {
+        "condition":"OR",
+        "rules":[
+            {"type": "bounds", "operator": "contains", "value": "bbox.-98.805051,29.2562939,-98.023766,29.777227"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-98.01332,29.942058,-97.521823,30.742355"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-97.648282,32.322777,-96.313105,33.2448879"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-95.872908,29.3667169,-94.802492,30.2584199"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-88.655707,41.326194,-86.978681,42.4935458"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-85.05069,33.1720879,-83.680793,34.3859799"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-83.797195,41.979053,-82.515768,42.890952"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-81.5228,28.15907,-81.163088,28.421315"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-81.90941,28.2761849,-81.092815,28.8409589"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-80.528196,25.4037869,-80.031362,26.999043"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-77.821925,38.402606,-76.67486,39.417607"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-76.123615,39.4926229,-74.657158,40.436757"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-74.948673,39.5083757,-72.269961,41.5412229"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-71.821553,41.774877,-70.591469,43.0633909"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-122.64969,37.341,-121.88927,38.138779"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-122.74212,47.007936,-121.87232,48.035194"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-122.19132,37.121665,-121.70998,37.4691679"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-118.87157,33.5642161,-117.48644,34.337914"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-117.45648,32.539866,-116.69485,33.41444"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-112.46033,33.089419,-111.42554,33.885028"}
+        ]
+      },
       "lowPriorityRule": {
         "condition": "OR",
         "rules": ["intermittent=yes"]
@@ -688,7 +802,32 @@
       "description": "Tasks contain Relations with missing type tag.",
       "blurb": "Relations with missing type tag.",
       "instruction": "Open your favorite editor and add Relation type tag.",
-      "difficulty": "NORMAL"
+      "difficulty": "NORMAL",
+      "highPriorityRule": {
+        "condition":"OR",
+        "rules":[
+            {"type": "bounds", "operator": "contains", "value": "bbox.-98.805051,29.2562939,-98.023766,29.777227"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-98.01332,29.942058,-97.521823,30.742355"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-97.648282,32.322777,-96.313105,33.2448879"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-95.872908,29.3667169,-94.802492,30.2584199"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-88.655707,41.326194,-86.978681,42.4935458"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-85.05069,33.1720879,-83.680793,34.3859799"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-83.797195,41.979053,-82.515768,42.890952"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-81.5228,28.15907,-81.163088,28.421315"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-81.90941,28.2761849,-81.092815,28.8409589"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-80.528196,25.4037869,-80.031362,26.999043"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-77.821925,38.402606,-76.67486,39.417607"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-76.123615,39.4926229,-74.657158,40.436757"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-74.948673,39.5083757,-72.269961,41.5412229"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-71.821553,41.774877,-70.591469,43.0633909"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-122.64969,37.341,-121.88927,38.138779"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-122.74212,47.007936,-121.87232,48.035194"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-122.19132,37.121665,-121.70998,37.4691679"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-118.87157,33.5642161,-117.48644,34.337914"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-117.45648,32.539866,-116.69485,33.41444"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-112.46033,33.089419,-111.42554,33.885028"}
+        ]
+      }
     }
   },
   "NodeValenceCheck": {
@@ -743,21 +882,28 @@
       "difficulty": "EASY",
       "defaultPriority": "LOW",
       "highPriorityRule": {
-        "condition": "OR",
-        "rules": [
-          "highway=motorway",
-          "highway=motorway_link",
-          "highway=trunk",
-          "highway=trunk_link"
-        ]
-      },
-      "mediumPriorityRule": {
-        "condition": "OR",
-        "rules": [
-          "highway=primary",
-          "highway=primary_link",
-          "highway=secondary",
-          "highway=secondary_link"
+        "condition":"OR",
+        "rules":[
+            {"type": "bounds", "operator": "contains", "value": "bbox.-98.805051,29.2562939,-98.023766,29.777227"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-98.01332,29.942058,-97.521823,30.742355"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-97.648282,32.322777,-96.313105,33.2448879"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-95.872908,29.3667169,-94.802492,30.2584199"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-88.655707,41.326194,-86.978681,42.4935458"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-85.05069,33.1720879,-83.680793,34.3859799"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-83.797195,41.979053,-82.515768,42.890952"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-81.5228,28.15907,-81.163088,28.421315"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-81.90941,28.2761849,-81.092815,28.8409589"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-80.528196,25.4037869,-80.031362,26.999043"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-77.821925,38.402606,-76.67486,39.417607"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-76.123615,39.4926229,-74.657158,40.436757"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-74.948673,39.5083757,-72.269961,41.5412229"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-71.821553,41.774877,-70.591469,43.0633909"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-122.64969,37.341,-121.88927,38.138779"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-122.74212,47.007936,-121.87232,48.035194"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-122.19132,37.121665,-121.70998,37.4691679"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-118.87157,33.5642161,-117.48644,34.337914"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-117.45648,32.539866,-116.69485,33.41444"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-112.46033,33.089419,-111.42554,33.885028"}
         ]
       }
     }
@@ -798,6 +944,31 @@
       "blurb": "Flag the Edge with different name tag or no name tag which is between the same name tag edges",
       "instruction": "Open your favorite editor and edit or add the name tag of the flagged edge(s) so they're consistent with connecting edges with same name tag.",
       "difficulty": "EASY",
+      "highPriorityRule": {
+        "condition":"OR",
+        "rules":[
+            {"type": "bounds", "operator": "contains", "value": "bbox.-98.805051,29.2562939,-98.023766,29.777227"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-98.01332,29.942058,-97.521823,30.742355"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-97.648282,32.322777,-96.313105,33.2448879"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-95.872908,29.3667169,-94.802492,30.2584199"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-88.655707,41.326194,-86.978681,42.4935458"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-85.05069,33.1720879,-83.680793,34.3859799"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-83.797195,41.979053,-82.515768,42.890952"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-81.5228,28.15907,-81.163088,28.421315"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-81.90941,28.2761849,-81.092815,28.8409589"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-80.528196,25.4037869,-80.031362,26.999043"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-77.821925,38.402606,-76.67486,39.417607"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-76.123615,39.4926229,-74.657158,40.436757"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-74.948673,39.5083757,-72.269961,41.5412229"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-71.821553,41.774877,-70.591469,43.0633909"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-122.64969,37.341,-121.88927,38.138779"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-122.74212,47.007936,-121.87232,48.035194"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-122.19132,37.121665,-121.70998,37.4691679"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-118.87157,33.5642161,-117.48644,34.337914"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-117.45648,32.539866,-116.69485,33.41444"},
+            {"type": "bounds", "operator": "contains", "value": "bbox.-112.46033,33.089419,-111.42554,33.885028"}
+        ]
+      },
       "tags":"highway"
     }
   },
@@ -905,11 +1076,28 @@
       "defaultPriority": "LOW",
       "highPriorityRule": {
         "condition":"OR",
-        "rules":["highway=motorway","highway=motorway_link","highway=trunk","highway=trunk_link"]
-      },
-      "mediumPriorityRule": {
-        "condition":"OR",
-        "rules":["highway=primary","highway=primary_link","highway=secondary","highway=secondary_link"]
+        "rules":[
+          {"type": "bounds", "operator": "contains", "value": "bbox.-98.805051,29.2562939,-98.023766,29.777227"},
+          {"type": "bounds", "operator": "contains", "value": "bbox.-98.01332,29.942058,-97.521823,30.742355"},
+          {"type": "bounds", "operator": "contains", "value": "bbox.-97.648282,32.322777,-96.313105,33.2448879"},
+          {"type": "bounds", "operator": "contains", "value": "bbox.-95.872908,29.3667169,-94.802492,30.2584199"},
+          {"type": "bounds", "operator": "contains", "value": "bbox.-88.655707,41.326194,-86.978681,42.4935458"},
+          {"type": "bounds", "operator": "contains", "value": "bbox.-85.05069,33.1720879,-83.680793,34.3859799"},
+          {"type": "bounds", "operator": "contains", "value": "bbox.-83.797195,41.979053,-82.515768,42.890952"},
+          {"type": "bounds", "operator": "contains", "value": "bbox.-81.5228,28.15907,-81.163088,28.421315"},
+          {"type": "bounds", "operator": "contains", "value": "bbox.-81.90941,28.2761849,-81.092815,28.8409589"},
+          {"type": "bounds", "operator": "contains", "value": "bbox.-80.528196,25.4037869,-80.031362,26.999043"},
+          {"type": "bounds", "operator": "contains", "value": "bbox.-77.821925,38.402606,-76.67486,39.417607"},
+          {"type": "bounds", "operator": "contains", "value": "bbox.-76.123615,39.4926229,-74.657158,40.436757"},
+          {"type": "bounds", "operator": "contains", "value": "bbox.-74.948673,39.5083757,-72.269961,41.5412229"},
+          {"type": "bounds", "operator": "contains", "value": "bbox.-71.821553,41.774877,-70.591469,43.0633909"},
+          {"type": "bounds", "operator": "contains", "value": "bbox.-122.64969,37.341,-121.88927,38.138779"},
+          {"type": "bounds", "operator": "contains", "value": "bbox.-122.74212,47.007936,-121.87232,48.035194"},
+          {"type": "bounds", "operator": "contains", "value": "bbox.-122.19132,37.121665,-121.70998,37.4691679"},
+          {"type": "bounds", "operator": "contains", "value": "bbox.-118.87157,33.5642161,-117.48644,34.337914"},
+          {"type": "bounds", "operator": "contains", "value": "bbox.-117.45648,32.539866,-116.69485,33.41444"},
+          {"type": "bounds", "operator": "contains", "value": "bbox.-112.46033,33.089419,-111.42554,33.885028"}
+        ]
       },
       "tags":"highway"
     }

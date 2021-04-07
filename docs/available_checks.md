@@ -12,6 +12,7 @@ This document is a list of tables with a description and link to documentation f
 | [PoolSizeCheck](tutorials/tutorial1-PoolSizeCheck.md) | The purpose of this check is to identify pools that are larger than 5,000,000 square meters or smaller than 5 square meters.  This check was created to be used as a tutorial for developing new checks. |
 | [ShadowDetectionCheck](checks/shadowDetectionCheck.md) | The purpose of this check is to identify floating buildings. |
 | [SpikyBuildingCheck](checks/spikyBuildingCheck.md) | The purpose of this check is to identify buildings with extremely sharp angles in their geometry. |
+| [TallBuildingCheck](checks/tallBuildingCheck.md) | The purpose of this check is to identify invalid building:levels and height tags as well as identify statistically outlying building:levels/height tags. |
 | [WaterAreaCheck](checks/waterAreaCheck.md) | Find overlapping water areas and water areas that should have a waterway. |
 | [WaterbodyAndIslandSizeCheck](checks/waterbodyAndIslandSizeCheck.md) | The purpose of this check is to identify waterbodies and islands which are either too small or too large in size. |
 
@@ -78,6 +79,7 @@ This document is a list of tables with a description and link to documentation f
 | [ConflictingAreaTagCombination](checks/conflictingAreaTagCombination.md) | The purpose of this check is to identify Areas with invalid tag combinations. |
 | ConflictingTagCombinationCheck | This check verifies whether an atlas object has a conflicting tag combination or not. |
 | [ConstructionCheck](checks/constructionCheck.md) | The purpose of this check is to identify construction tags where the construction hasn't been checked on recently, or the expected finish date has been passed. |
+| [HighwayMissingNameAndRefTagCheck](checks/highwayMissingNameAndRefTagCheck.md) | This check detects highways that are missing a name and ref tag. At least one of them is required. |
 | [HighwayToFerryTagCheck](checks/highwayToFerryTagCheck.md) | The purpose of this check is to identify all Edges with route=FERRY and highway=PATH (or higher). |
 | ImproperAndUnknownRoadNameCheck | This check flags improper road name values. |
 | [InvalidAccessTagCheck](checks/invalidAccessTagCheck.md) | The purpose of this check is to identify invalid access tags. |

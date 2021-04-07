@@ -322,6 +322,14 @@
       "tags":"coastline"
     }
   },
+  "HighwayMissingNameAndRefTagCheck": {
+    "min.nonContiguous.angle": 30.0,
+    "min.highway.type": "tertiary",
+    "challenge": {
+      "description": "This challenge contains roads that are missing a name/ref tag and needs at least one added.",
+      "instruction": "Please add a name or ref tag to each road without them."
+    }
+  },
   "ImproperAndUnknownRoadNameCheck": {
     "names.improper": [
       "street",
@@ -1308,6 +1316,20 @@
       "defaultPriority": "LOW"
     },
     "minHighwayType": "tertiary"
+  },
+  "TallBuildingCheck": {
+    "buffer.distance.meters": 1600.0,
+    "min.dataset.size.for.stats.computation": 50.0,
+    "max.level.tag.value": 100.0,
+    "outlier.multiplier": 18.0,
+    "invalid.height.characters": ["~","`","!","@","#","$","%","^","&","*","(", ")","-","_","+","=","[","[","}","]","|","\\",":",";","<",",",">","?","/"],
+    "challenge": {
+      "description": "Identifies invalid or statistically outlying building:levels/height tag values.",
+      "blurb": "Validating building:height/height tags",
+      "instruction": "Please validate building:height/height tags based on https://wiki.openstreetmap.org/wiki/Key:building:levels and https://wiki.openstreetmap.org/wiki/Key:height",
+      "difficulty": "MEDIUM",
+      "defaultPriority": "LOW"
+    }
   },
   "TollValidationCheck": {
     "minimumHighwayType": "tertiary",
